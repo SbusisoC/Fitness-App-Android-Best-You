@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--suppress AndroidDomInspection -->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#12CBC4"
+    tools:context=".ui.workouts.chestWorkouts">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/holo1"
+                android:layout_width="265dp"
+                android:layout_height="113dp"
+                android:layout_marginLeft="75dp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:srcCompat="@android:drawable/dialog_holo_light_frame" />
+
+                <ImageView
+                    android:id="@+id/imageBarbellBenchPress"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_marginLeft="26dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/barbellbenchpress" />
+
+                <ImageView
+                    android:id="@+id/imageView34"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="22dp"
+                    app:srcCompat="@drawable/profileicon" />
+
+                <TextView
+                    android:id="@+id/textBarbellBenchPress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Barbell bench press"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="40dp"/>
+
+                <TextView
+                    android:id="@+id/textReps1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reps:"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="70dp"/>
+
+                <EditText
+                    android:id="@+id/editTextReps"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginTop="55dp"
+                    android:text="0"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textSets1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sets:"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="70dp"/>
+
+                <EditText
+                    android:id="@+id/editTextSets"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="55dp"
+                    android:text="0"
+                    android:inputType="number" />
+
+
+                <CheckBox
+                    android:id="@+id/checkBoxExerciseSelection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="58dp"
+                    android:layout_marginLeft="275dp"/>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/holo2"
+                android:layout_width="265dp"
+                android:layout_height="113dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="75dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:srcCompat="@android:drawable/dialog_holo_light_frame" />
+
+                <ImageView
+                    android:id="@+id/imageInclinedBenchPress"
+                    android:layout_width="102dp"
+                    android:layout_height="102dp"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginTop="17dp"
+                    app:srcCompat="@drawable/inclinedbenchpress" />
+
+                <ImageView
+                    android:id="@+id/imageView32"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="22dp"
+                    app:srcCompat="@drawable/profileicon" />
+
+                <TextView
+                    android:id="@+id/textInclineBarbellPress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Incline barbell press"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textReps2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reps:"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="70dp"/>
+
+                <EditText
+                    android:id="@+id/editTextReps2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginTop="55dp"
+                    android:text="0"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textSets2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sets:"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="70dp"/>
+
+                <EditText
+                    android:id="@+id/editTextSets2"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="55dp"
+                    android:text="0"
+                    android:inputType="number" />
+
+
+                <CheckBox
+                    android:id="@+id/checkBoxExerciseSelection2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="58dp"
+                    android:layout_marginLeft="275dp"/>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/holo3"
+                android:layout_width="265dp"
+                android:layout_height="113dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="75dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:srcCompat="@android:drawable/dialog_holo_light_frame" />
+
+                <ImageView
+                    android:id="@+id/imageDeclineBenchPress"
+                    android:layout_width="129dp"
+                    android:layout_height="128dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="7dp"
+                    app:srcCompat="@drawable/declinedbenchpress" />
+
+                <ImageView
+                    android:id="@+id/imageView33"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="22dp"
+                    app:srcCompat="@drawable/profileicon" />
+
+                <TextView
+                    android:id="@+id/textDeclineBarbellPress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Decline barbell press"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textReps3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reps:"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="70dp"/>
+
+                <EditText
+                    android:id="@+id/editTextReps3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginTop="55dp"
+                    android:text="0"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textSets3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sets:"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="70dp"/>
+
+                <EditText
+                    android:id="@+id/editTextSets3"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="55dp"
+                    android:text="0"
+                    android:inputType="number" />
+
+
+                <CheckBox
+                    android:id="@+id/checkBoxExerciseSelection3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="58dp"
+                    android:layout_marginLeft="275dp"/>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/holo4"
+                android:layout_width="265dp"
+                android:layout_height="113dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="75dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:srcCompat="@android:drawable/dialog_holo_light_frame"/>
+
+                <ImageView
+                    android:id="@+id/imageDumbbellBenchPress"
+                    android:layout_width="122dp"
+                    android:layout_height="121dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginTop="7dp"
+                    app:srcCompat="@drawable/dumbbellbenchpress" />
+
+                <ImageView
+                    android:id="@+id/imageView35"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="22dp"
+                    app:srcCompat="@drawable/profileicon" />
+
+                <TextView
+                    android:id="@+id/textDumbbellBenchPress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Dumbbell bench press"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textReps4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reps:"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="70dp"/>
+
+                <EditText
+                    android:id="@+id/editTextReps4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginTop="55dp"
+                    android:text="0"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textSets4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sets:"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="70dp"/>
+
+                <EditText
+                    android:id="@+id/editTextSets4"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="55dp"
+                    android:text="0"
+                    android:inputType="number" />
+
+
+                <CheckBox
+                    android:id="@+id/checkBoxExerciseSelection4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="58dp"
+                    android:layout_marginLeft="275dp"/>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/holo5"
+                android:layout_width="265dp"
+                android:layout_height="113dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="75dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:srcCompat="@android:drawable/dialog_holo_light_frame"/>
+
+                <ImageView
+                    android:id="@+id/imageDumbbellInclinePress"
+                    android:layout_width="115dp"
+                    android:layout_height="115dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="10dp"
+                    app:srcCompat="@drawable/dumbellinclinepress" />
+
+                <ImageView
+                    android:id="@+id/imageView36"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="22dp"
+                    app:srcCompat="@drawable/profileicon" />
+
+                <TextView
+                    android:id="@+id/textInclineDumbbellPress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Incline dumbbell press"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textReps5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reps:"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="70dp"/>
+
+                <EditText
+                    android:id="@+id/editTextReps5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginTop="55dp"
+                    android:text="0"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textSets5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sets:"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="70dp"/>
+
+                <EditText
+                    android:id="@+id/editTextSets5"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="55dp"
+                    android:text="0"
+                    android:inputType="number" />
+
+
+                <CheckBox
+                    android:id="@+id/checkBoxExerciseSelection5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="58dp"
+                    android:layout_marginLeft="275dp"/>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/holo6"
+                android:layout_width="265dp"
+                android:layout_height="113dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="75dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:srcCompat="@android:drawable/dialog_holo_light_frame"/>
+
+                <ImageView
+                    android:id="@+id/imageDumbbellDeclinePress"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/dumbbelldeclinepress" />
+
+                <ImageView
+                    android:id="@+id/imageView37"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="22dp"
+                    app:srcCompat="@drawable/profileicon" />
+
+                <TextView
+                    android:id="@+id/textDeclineDumbbellPress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Decline dumbbell press"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textReps6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reps:"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="70dp"/>
+
+                <EditText
+                    android:id="@+id/editTextReps6"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginTop="55dp"
+                    android:text="0"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textSets6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sets:"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="70dp"/>
+
+                <EditText
+                    android:id="@+id/editTextSets6"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="55dp"
+                    android:text="0"
+                    android:inputType="number" />
+
+
+                <CheckBox
+                    android:id="@+id/checkBoxExerciseSelection6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="58dp"
+                    android:layout_marginLeft="275dp"/>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/holo7"
+                android:layout_width="265dp"
+                android:layout_height="113dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="75dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:srcCompat="@android:drawable/dialog_holo_light_frame"/>
+
+                <ImageView
+                    android:id="@+id/imageCloseGripBenchPres"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/closegripbenchpress" />
+
+                <ImageView
+                    android:id="@+id/imageView38"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="22dp"
+                    app:srcCompat="@drawable/profileicon" />
+
+                <TextView
+                    android:id="@+id/textCloseGripDumbbellPress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Close grip press"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textReps7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reps:"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="70dp"/>
+
+                <EditText
+                    android:id="@+id/editTextReps7"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginTop="55dp"
+                    android:text="0"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textSets7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sets:"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="70dp"/>
+
+                <EditText
+                    android:id="@+id/editTextSets7"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="55dp"
+                    android:text="0"
+                    android:inputType="number" />
+
+
+                <CheckBox
+                    android:id="@+id/checkBoxExerciseSelection7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="58dp"
+                    android:layout_marginLeft="275dp"/>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/holo8"
+                android:layout_width="265dp"
+                android:layout_height="113dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="75dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageView"
+                app:srcCompat="@android:drawable/dialog_holo_light_frame"/>
+
+
+                <ImageView
+                    android:id="@+id/imagePecDeck"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="22dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/pecdeck" />
+
+                <ImageView
+                    android:id="@+id/imageView39"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="22dp"
+                    app:srcCompat="@drawable/profileicon" />
+
+                <TextView
+                    android:id="@+id/textPecDeck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Pec deck"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textReps8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reps:"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="70dp"/>
+
+                <EditText
+                    android:id="@+id/editTextReps8"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginTop="55dp"
+                    android:text="0"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textSets8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sets:"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="70dp"/>
+
+                <EditText
+                    android:id="@+id/editTextSets8"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="55dp"
+                    android:text="0"
+                    android:inputType="number" />
+
+
+                <CheckBox
+                    android:id="@+id/checkBoxExerciseSelection8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="58dp"
+                    android:layout_marginLeft="275dp"/>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/holo9"
+                    android:layout_width="265dp"
+                    android:layout_height="113dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="75dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView"
+                    app:srcCompat="@android:drawable/dialog_holo_light_frame"/>
+
+                <ImageView
+                    android:id="@+id/imageChestFly"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/chestfly" />
+
+                <ImageView
+                    android:id="@+id/imageView51"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="22dp"
+                    app:srcCompat="@drawable/profileicon" />
+
+                <TextView
+                    android:id="@+id/textPecDeckChestFly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Pec deck chest fly"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textReps9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reps:"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="70dp"/>
+
+                <EditText
+                    android:id="@+id/editTextReps9"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginTop="55dp"
+                    android:text="0"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textSets9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sets:"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="70dp"/>
+
+                <EditText
+                    android:id="@+id/editTextSets9"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="55dp"
+                    android:text="0"
+                    android:inputType="number" />
+
+
+                <CheckBox
+                    android:id="@+id/checkBoxExerciseSelection9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="58dp"
+                    android:layout_marginLeft="275dp"/>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/holo10"
+                    android:layout_width="265dp"
+                    android:layout_height="113dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="75dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView"
+                    app:srcCompat="@android:drawable/dialog_holo_light_frame"/>
+
+                <ImageView
+                    android:id="@+id/imageCableChestFly"
+                    android:layout_width="110dp"
+                    android:layout_height="110dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="12dp"
+                    app:srcCompat="@drawable/cablechestfly" />
+
+                <ImageView
+                    android:id="@+id/imageView54"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="22dp"
+                    app:srcCompat="@drawable/profileicon" />
+
+                <TextView
+                    android:id="@+id/textCableChestFly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Cable chest fly"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textReps10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reps:"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="70dp"/>
+
+                <EditText
+                    android:id="@+id/editTextReps10"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginTop="55dp"
+                    android:text="0"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textSets10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sets:"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="70dp"/>
+
+                <EditText
+                    android:id="@+id/editTextSets10"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="55dp"
+                    android:text="0"
+                    android:inputType="number" />
+
+
+                <CheckBox
+                    android:id="@+id/checkBoxExerciseSelection10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="58dp"
+                    android:layout_marginLeft="275dp"/>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/holo11"
+                    android:layout_width="265dp"
+                    android:layout_height="113dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="75dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.496"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/imageView"
+                    app:srcCompat="@android:drawable/dialog_holo_light_frame"/>
+
+                <ImageView
+                    android:id="@+id/imageChestPress"
+                    android:layout_width="105dp"
+                    android:layout_height="105dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp"
+                    app:srcCompat="@drawable/chestpress" />
+
+                <ImageView
+                    android:id="@+id/imageView57"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_marginLeft="32dp"
+                    android:layout_marginTop="22dp"
+                    app:srcCompat="@drawable/profileicon" />
+
+                <TextView
+                    android:id="@+id/textChestPress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="40dp"
+                    android:text="Chest press"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textReps11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reps:"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="125dp"
+                    android:layout_marginTop="70dp"/>
+
+                <EditText
+                    android:id="@+id/editTextReps11"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="155dp"
+                    android:layout_marginTop="55dp"
+                    android:text="0"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/textSets11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sets:"
+                    android:textSize="13sp"
+                    android:layout_marginLeft="200dp"
+                    android:layout_marginTop="70dp"/>
+
+                <EditText
+                    android:id="@+id/editTextSets11"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="230dp"
+                    android:layout_marginTop="55dp"
+                    android:text="0"
+                    android:inputType="number" />
+
+
+                <CheckBox
+                    android:id="@+id/checkBoxExerciseSelection11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="58dp"
+                    android:layout_marginLeft="275dp"/>
+
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp">
+
+            </FrameLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/daySelectorLayout"
+        android:layout_width="120dp"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="-90dp"
+        android:background="#018786"
+        app:layout_constraintTop_toBottomOf="@+id/doneButton"
+        app:layout_constraintStart_toStartOf="@+id/doneButton"
+        app:layout_constraintEnd_toEndOf="@+id/doneButton">
+
+        <!-- Left arrow button -->
+        <ImageView
+            android:id="@+id/leftArrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/left_arrow"/>
+
+        <!-- Day display TextView -->
+        <TextView
+            android:id="@+id/dayTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:text="Sun"
+            android:textSize="16sp"/>
+
+        <!-- Right arrow button -->
+        <ImageView
+            android:id="@+id/rightArrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/right_arrow"/>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

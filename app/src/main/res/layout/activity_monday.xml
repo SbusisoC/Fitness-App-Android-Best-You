@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#12CBC4"
+    tools:context=".ui.plan.Monday">
+
+    <ImageView
+        android:id="@+id/chest1"
+        android:layout_width="295dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="130dp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/barbell_bench_press_round" />
+
+    <ImageView
+        android:id="@+id/holo"
+        android:layout_width="265dp"
+        android:layout_height="113dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.460"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chest1"
+        app:layout_constraintVertical_bias="0.23"
+        app:srcCompat="@android:drawable/dialog_holo_light_frame" />
+
+    <TextView
+        android:id="@+id/textBarbellBenchPress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:text="Barbell bench press"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/holo"
+        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintHorizontal_bias="0.482"
+        app:layout_constraintStart_toStartOf="@+id/holo" />
+
+    <TextView
+        android:id="@+id/textReps3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Reps:"
+        android:textSize="13sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/holo"
+        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="@+id/holo" />
+
+    <EditText
+        android:id="@+id/editTextReps"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:inputType="number"
+        android:text="0"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/holo"
+        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toStartOf="@+id/holo" />
+
+    <TextView
+        android:id="@+id/textSets1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Sets:"
+        android:textSize="13sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/holo"
+        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="@+id/holo" />
+
+    <EditText
+        android:id="@+id/editTextSets"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:inputType="number"
+        android:text="0"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/holo"
+        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintHorizontal_bias="0.308"
+        app:layout_constraintStart_toStartOf="@+id/holo" />
+
+    <ImageView
+        android:id="@+id/chest2"
+        android:layout_width="295dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="130dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/incline_bench_press_round" />
+
+    <ImageView
+        android:id="@+id/chest3"
+        android:layout_width="295dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="130dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/decline_bench_press_round" />
+
+    <ImageView
+        android:id="@+id/chest4"
+        android:layout_width="295dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="130dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dumbbell_bench_press_round" />
+
+    <ImageView
+        android:id="@+id/chest5"
+        android:layout_width="295dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="130dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dumbbell_incline_press_round" />
+
+    <ImageView
+        android:id="@+id/chest6"
+        android:layout_width="295dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="130dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dumbbell_decline_press_round" />
+
+    <ImageView
+        android:id="@+id/chest7"
+        android:layout_width="295dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="130dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chest_fly_round" />
+
+    <ImageView
+        android:id="@+id/chest8"
+        android:layout_width="295dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="130dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cable_chest_fly_round" />
+
+    <ImageView
+        android:id="@+id/chest9"
+        android:layout_width="295dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="130dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pec_deck_round" />
+
+    <ImageView
+        android:id="@+id/chest10"
+        android:layout_width="295dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="130dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chest_press_round" />
+
+    <ImageView
+        android:id="@+id/chest11"
+        android:layout_width="295dp"
+        android:layout_height="260dp"
+        android:layout_marginTop="96dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/close_grip_press_round" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="72dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="327dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
