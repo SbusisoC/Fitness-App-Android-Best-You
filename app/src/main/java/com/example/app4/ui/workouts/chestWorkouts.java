@@ -312,23 +312,23 @@ public class chestWorkouts extends AppCompatActivity {
             intent.putExtra("workout5", "Incline Dumbbell Press: Reps - " + numberOfReps.getText().toString() + ", Sets - " + numberOfSets.getText().toString());
         }
         if (checkBox6.isChecked()) {
-            dbHelper.insertWorkout("Dumbbell Incline Press", numberOfReps6.getText().toString(), numberOfSets6.getText().toString());
-            intent.putExtra("workout6", "Dumbbell Incline Press: Reps - " + numberOfReps.getText().toString() + ", Sets - " + numberOfSets.getText().toString());
+            dbHelper.insertWorkout("Dumbbell Decline Press", numberOfReps6.getText().toString(), numberOfSets6.getText().toString());
+            intent.putExtra("workout6", "Dumbbell Decline Press: Reps - " + numberOfReps.getText().toString() + ", Sets - " + numberOfSets.getText().toString());
         }
         if (checkBox7.isChecked()) {
-            dbHelper.insertWorkout("Dumbbell Decline Press", numberOfReps7.getText().toString(), numberOfSets7.getText().toString());
-            intent.putExtra("workout7", "Dumbbell Decline Press: Reps - " + numberOfReps.getText().toString() + ", Sets - " + numberOfSets.getText().toString());
+            dbHelper.insertWorkout("Close Grip Press", numberOfReps7.getText().toString(), numberOfSets7.getText().toString());
+            intent.putExtra("workout7", "Close Grip Press: Reps - " + numberOfReps.getText().toString() + ", Sets - " + numberOfSets.getText().toString());
         }
         if (checkBox8.isChecked()) {
-            dbHelper.insertWorkout("Close Grip Dumbbell Press", numberOfReps8.getText().toString(), numberOfSets8.getText().toString());
-            intent.putExtra("workout8", "Close Grip Dumbbell Press: Reps - " + numberOfReps.getText().toString() + ", Sets - " + numberOfSets.getText().toString());
+            dbHelper.insertWorkout("Pec Deck", numberOfReps8.getText().toString(), numberOfSets8.getText().toString());
+            intent.putExtra("workout8", "Pec Deck: Reps - " + numberOfReps.getText().toString() + ", Sets - " + numberOfSets.getText().toString());
         }
         if (checkBox9.isChecked()) {
-            dbHelper.insertWorkout("Pec Deck", numberOfReps9.getText().toString(), numberOfSets9.getText().toString());
-            intent.putExtra("workout9", "Pec Deck: Reps - " + numberOfReps.getText().toString() + ", Sets - " + numberOfSets.getText().toString());
+            dbHelper.insertWorkout("Chest Fly", numberOfReps9.getText().toString(), numberOfSets9.getText().toString());
+            intent.putExtra("workout9", "Chest Fly: Reps - " + numberOfReps.getText().toString() + ", Sets - " + numberOfSets.getText().toString());
         }
         if (checkBox10.isChecked()) {
-            dbHelper.insertWorkout("Pec Deck Chest Fly", numberOfReps10.getText().toString(), numberOfSets10.getText().toString());
+            dbHelper.insertWorkout("Cable Chest Fly", numberOfReps10.getText().toString(), numberOfSets10.getText().toString());
             intent.putExtra("workout10", "Pec Deck Chest Fly: Reps - " + numberOfReps.getText().toString() + ", Sets - " + numberOfSets.getText().toString());
         }
         if (checkBox11.isChecked()) {

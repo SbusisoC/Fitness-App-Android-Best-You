@@ -14,6 +14,8 @@ import android.widget.TextView;
 
 import com.example.app4.R;
 
+import org.w3c.dom.Text;
+
 import java.util.Objects;
 
 @SuppressWarnings("deprecation")
@@ -27,6 +29,7 @@ public class Monday extends AppCompatActivity {
         Objects.requireNonNull(getSupportActionBar()).setDisplayHomeAsUpEnabled(true);
 
         TextView text1 = findViewById(R.id.textBarbellBenchPress2);
+        TextView text2 = findViewById(R.id.textBarbellBenchPress2);
         TextView repText1 = findViewById(R.id.textReps3);
         TextView setText1 = findViewById(R.id.textSets1);
         ImageView workoutImage1 = findViewById(R.id.chest1);
