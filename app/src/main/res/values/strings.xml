@@ -6,4 +6,6 @@
     <string name="plan">Plan</string>
     <string name="workouts">Workouts</string>
     <string name="progress">Progress</string>
+    <string name="workout_is_set">Workout Is Set.</string>
+    <string name="navigate_right_to_go">Navigate Right To Go.</string>
 </resources>

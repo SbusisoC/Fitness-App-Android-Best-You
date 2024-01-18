@@ -8,11 +8,47 @@
     tools:context=".ui.plan.Monday">
 
     <ImageView
-        android:id="@+id/chest1"
-        android:layout_width="295dp"
-        android:layout_height="260dp"
+        android:id="@+id/messageBoard"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="130dp"
-        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/message_board" />
+
+
+    <TextView
+        android:id="@+id/workoutSet1"
+        android:layout_width="85dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/workout_is_set"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/messageBoard"
+        app:layout_constraintStart_toStartOf="@+id/messageBoard"
+        app:layout_constraintTop_toTopOf="@+id/messageBoard" />
+
+    <TextView
+        android:id="@+id/workoutSet2"
+        android:layout_width="118dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="2dp"
+        android:text="@string/navigate_right_to_go"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/workoutSet1"
+        app:layout_constraintStart_toStartOf="@+id/workoutSet1"
+        app:layout_constraintTop_toBottomOf="@+id/workoutSet1" />
+
+    <ImageView
+        android:id="@+id/chest1"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="130dp"
+        android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.447"
         app:layout_constraintStart_toStartOf="parent"
@@ -23,7 +59,7 @@
         android:id="@+id/holo"
         android:layout_width="265dp"
         android:layout_height="113dp"
-        android:visibility="visible"
+        android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.460"
@@ -100,8 +136,8 @@
 
     <ImageView
         android:id="@+id/chest2"
-        android:layout_width="295dp"
-        android:layout_height="260dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_marginTop="130dp"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -109,6 +145,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/incline_bench_press_round" />
+
+    <ImageView
+        android:id="@+id/holo2"
+        android:layout_width="265dp"
+        android:layout_height="113dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.460"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chest2"
+        app:layout_constraintVertical_bias="0.23"
+        app:srcCompat="@android:drawable/dialog_holo_light_frame" />
 
     <TextView
         android:id="@+id/textInclineBenchPress2"
@@ -119,10 +168,23 @@
         android:textSize="14sp"
         android:textStyle="bold"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo2"
+        app:layout_constraintEnd_toEndOf="@+id/holo2"
         app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo2" />
+
+    <TextView
+        android:id="@+id/textReps2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Reps:"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/holo2"
+        app:layout_constraintEnd_toEndOf="@+id/holo2"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="@+id/holo2" />
 
     <EditText
         android:id="@+id/editTextReps2"
@@ -132,10 +194,23 @@
         android:inputType="number"
         android:text="0"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo2"
+        app:layout_constraintEnd_toEndOf="@+id/holo2"
         app:layout_constraintHorizontal_bias="0.849"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo2" />
+
+    <TextView
+        android:id="@+id/textSets2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Sets:"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/holo2"
+        app:layout_constraintEnd_toEndOf="@+id/holo2"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="@+id/holo2" />
 
     <EditText
         android:id="@+id/editTextSets2"
@@ -145,15 +220,15 @@
         android:inputType="number"
         android:text="0"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo2"
+        app:layout_constraintEnd_toEndOf="@+id/holo2"
         app:layout_constraintHorizontal_bias="0.308"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo2" />
 
     <ImageView
         android:id="@+id/chest3"
-        android:layout_width="295dp"
-        android:layout_height="260dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_marginTop="130dp"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -161,6 +236,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/decline_bench_press_round" />
+
+    <ImageView
+        android:id="@+id/holo3"
+        android:layout_width="265dp"
+        android:layout_height="113dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.460"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chest3"
+        app:layout_constraintVertical_bias="0.23"
+        app:srcCompat="@android:drawable/dialog_holo_light_frame" />
 
     <TextView
         android:id="@+id/textDeclineBenchPress3"
@@ -171,10 +259,23 @@
         android:textSize="14sp"
         android:textStyle="bold"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo3"
+        app:layout_constraintEnd_toEndOf="@+id/holo3"
         app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo3" />
+
+    <TextView
+        android:id="@+id/textReps33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Reps:"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/holo3"
+        app:layout_constraintEnd_toEndOf="@+id/holo3"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="@+id/holo3" />
 
     <EditText
         android:id="@+id/editTextReps3"
@@ -184,10 +285,23 @@
         android:inputType="number"
         android:text="0"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo3"
+        app:layout_constraintEnd_toEndOf="@+id/holo3"
         app:layout_constraintHorizontal_bias="0.849"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo3" />
+
+    <TextView
+        android:id="@+id/textSets3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Sets:"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/holo3"
+        app:layout_constraintEnd_toEndOf="@+id/holo3"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="@+id/holo3" />
 
     <EditText
         android:id="@+id/editTextSets3"
@@ -197,16 +311,16 @@
         android:inputType="number"
         android:text="0"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo3"
+        app:layout_constraintEnd_toEndOf="@+id/holo3"
         app:layout_constraintHorizontal_bias="0.308"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo3" />
 
 
     <ImageView
         android:id="@+id/chest4"
-        android:layout_width="295dp"
-        android:layout_height="260dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_marginTop="130dp"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -214,6 +328,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/dumbbell_bench_press_round" />
+
+    <ImageView
+        android:id="@+id/holo4"
+        android:layout_width="265dp"
+        android:layout_height="113dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.460"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chest4"
+        app:layout_constraintVertical_bias="0.23"
+        app:srcCompat="@android:drawable/dialog_holo_light_frame" />
 
     <TextView
         android:id="@+id/textDumbbellBenchPress4"
@@ -224,10 +351,23 @@
         android:textSize="14sp"
         android:textStyle="bold"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo4"
+        app:layout_constraintEnd_toEndOf="@+id/holo4"
         app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo4" />
+
+    <TextView
+        android:id="@+id/textReps4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Reps:"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/holo4"
+        app:layout_constraintEnd_toEndOf="@+id/holo4"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="@+id/holo4" />
 
     <EditText
         android:id="@+id/editTextReps4"
@@ -237,10 +377,23 @@
         android:inputType="number"
         android:text="0"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo4"
+        app:layout_constraintEnd_toEndOf="@+id/holo4"
         app:layout_constraintHorizontal_bias="0.849"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo4" />
+
+    <TextView
+        android:id="@+id/textSets4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Sets:"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/holo4"
+        app:layout_constraintEnd_toEndOf="@+id/holo4"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="@+id/holo4" />
 
     <EditText
         android:id="@+id/editTextSets4"
@@ -250,16 +403,16 @@
         android:inputType="number"
         android:text="0"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo4"
+        app:layout_constraintEnd_toEndOf="@+id/holo4"
         app:layout_constraintHorizontal_bias="0.308"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo4" />
 
 
     <ImageView
         android:id="@+id/chest5"
-        android:layout_width="295dp"
-        android:layout_height="260dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_marginTop="130dp"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -267,6 +420,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/dumbbell_incline_press_round" />
+
+    <ImageView
+        android:id="@+id/holo5"
+        android:layout_width="265dp"
+        android:layout_height="113dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.460"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chest5"
+        app:layout_constraintVertical_bias="0.23"
+        app:srcCompat="@android:drawable/dialog_holo_light_frame" />
 
     <TextView
         android:id="@+id/textDumbbellInclinePress5"
@@ -277,10 +443,23 @@
         android:textSize="14sp"
         android:textStyle="bold"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo5"
+        app:layout_constraintEnd_toEndOf="@+id/holo5"
         app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo5" />
+
+    <TextView
+        android:id="@+id/textReps5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Reps:"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/holo5"
+        app:layout_constraintEnd_toEndOf="@+id/holo5"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="@+id/holo5" />
 
     <EditText
         android:id="@+id/editTextReps5"
@@ -290,10 +469,23 @@
         android:inputType="number"
         android:text="0"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo5"
+        app:layout_constraintEnd_toEndOf="@+id/holo5"
         app:layout_constraintHorizontal_bias="0.849"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo5" />
+
+    <TextView
+        android:id="@+id/textSets5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Sets:"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/holo5"
+        app:layout_constraintEnd_toEndOf="@+id/holo5"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="@+id/holo5" />
 
     <EditText
         android:id="@+id/editTextSets5"
@@ -303,16 +495,16 @@
         android:inputType="number"
         android:text="0"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo5"
+        app:layout_constraintEnd_toEndOf="@+id/holo5"
         app:layout_constraintHorizontal_bias="0.308"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo5" />
 
 
     <ImageView
         android:id="@+id/chest6"
-        android:layout_width="295dp"
-        android:layout_height="260dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_marginTop="130dp"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -320,6 +512,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/dumbbell_decline_press_round" />
+
+    <ImageView
+        android:id="@+id/holo6"
+        android:layout_width="265dp"
+        android:layout_height="113dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.460"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chest6"
+        app:layout_constraintVertical_bias="0.23"
+        app:srcCompat="@android:drawable/dialog_holo_light_frame" />
 
     <TextView
         android:id="@+id/textDumbbellDeclinePress2"
@@ -330,10 +535,23 @@
         android:textSize="14sp"
         android:textStyle="bold"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo6"
+        app:layout_constraintEnd_toEndOf="@+id/holo6"
         app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo6" />
+
+    <TextView
+        android:id="@+id/textReps6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Reps:"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/holo6"
+        app:layout_constraintEnd_toEndOf="@+id/holo6"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="@+id/holo6" />
 
     <EditText
         android:id="@+id/editTextReps6"
@@ -343,10 +561,23 @@
         android:inputType="number"
         android:text="0"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo6"
+        app:layout_constraintEnd_toEndOf="@+id/holo6"
         app:layout_constraintHorizontal_bias="0.849"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo6" />
+
+    <TextView
+        android:id="@+id/textSets6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Sets:"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/holo6"
+        app:layout_constraintEnd_toEndOf="@+id/holo6"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="@+id/holo6" />
 
     <EditText
         android:id="@+id/editTextSets6"
@@ -356,23 +587,36 @@
         android:inputType="number"
         android:text="0"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo6"
+        app:layout_constraintEnd_toEndOf="@+id/holo6"
         app:layout_constraintHorizontal_bias="0.308"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo6" />
 
 
     <ImageView
         android:id="@+id/chest7"
-        android:layout_width="295dp"
-        android:layout_height="260dp"
-        android:layout_marginTop="96dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="130dp"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.126"
+        app:layout_constraintHorizontal_bias="0.447"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/close_grip_press_round" />
+
+    <ImageView
+        android:id="@+id/holo7"
+        android:layout_width="265dp"
+        android:layout_height="113dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.460"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chest7"
+        app:layout_constraintVertical_bias="0.23"
+        app:srcCompat="@android:drawable/dialog_holo_light_frame" />
 
     <TextView
         android:id="@+id/textCloseGripBench2"
@@ -383,10 +627,23 @@
         android:textSize="14sp"
         android:textStyle="bold"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo7"
+        app:layout_constraintEnd_toEndOf="@+id/holo7"
         app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo7" />
+
+    <TextView
+        android:id="@+id/textReps7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Reps:"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/holo7"
+        app:layout_constraintEnd_toEndOf="@+id/holo7"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="@+id/holo7" />
 
     <EditText
         android:id="@+id/editTextReps7"
@@ -396,10 +653,23 @@
         android:inputType="number"
         android:text="0"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo7"
+        app:layout_constraintEnd_toEndOf="@+id/holo7"
         app:layout_constraintHorizontal_bias="0.849"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo7" />
+
+    <TextView
+        android:id="@+id/textSets7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Sets:"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/holo7"
+        app:layout_constraintEnd_toEndOf="@+id/holo7"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="@+id/holo7" />
 
     <EditText
         android:id="@+id/editTextSets7"
@@ -409,16 +679,16 @@
         android:inputType="number"
         android:text="0"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo7"
+        app:layout_constraintEnd_toEndOf="@+id/holo7"
         app:layout_constraintHorizontal_bias="0.308"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo7" />
 
 
     <ImageView
         android:id="@+id/chest8"
-        android:layout_width="295dp"
-        android:layout_height="260dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_marginTop="130dp"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -426,6 +696,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/pec_deck_round" />
+
+    <ImageView
+        android:id="@+id/holo8"
+        android:layout_width="265dp"
+        android:layout_height="113dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.460"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chest8"
+        app:layout_constraintVertical_bias="0.23"
+        app:srcCompat="@android:drawable/dialog_holo_light_frame" />
 
     <TextView
         android:id="@+id/textPecDeck2"
@@ -436,10 +719,23 @@
         android:textSize="14sp"
         android:textStyle="bold"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo8"
+        app:layout_constraintEnd_toEndOf="@+id/holo8"
         app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo8" />
+
+    <TextView
+        android:id="@+id/textReps8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Reps:"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/holo8"
+        app:layout_constraintEnd_toEndOf="@+id/holo8"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="@+id/holo8" />
 
     <EditText
         android:id="@+id/editTextReps8"
@@ -449,10 +745,23 @@
         android:inputType="number"
         android:text="0"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo8"
+        app:layout_constraintEnd_toEndOf="@+id/holo8"
         app:layout_constraintHorizontal_bias="0.849"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo8" />
+
+    <TextView
+        android:id="@+id/textSets8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Sets:"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/holo8"
+        app:layout_constraintEnd_toEndOf="@+id/holo8"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="@+id/holo8" />
 
     <EditText
         android:id="@+id/editTextSets8"
@@ -462,16 +771,16 @@
         android:inputType="number"
         android:text="0"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo8"
+        app:layout_constraintEnd_toEndOf="@+id/holo8"
         app:layout_constraintHorizontal_bias="0.308"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo8" />
 
 
     <ImageView
         android:id="@+id/chest9"
-        android:layout_width="295dp"
-        android:layout_height="260dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_marginTop="130dp"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -479,6 +788,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/chest_fly_round" />
+
+    <ImageView
+        android:id="@+id/holo9"
+        android:layout_width="265dp"
+        android:layout_height="113dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.460"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chest9"
+        app:layout_constraintVertical_bias="0.23"
+        app:srcCompat="@android:drawable/dialog_holo_light_frame" />
 
     <TextView
         android:id="@+id/textChestFly2"
@@ -489,10 +811,23 @@
         android:textSize="14sp"
         android:textStyle="bold"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo9"
+        app:layout_constraintEnd_toEndOf="@+id/holo9"
         app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo9" />
+
+    <TextView
+        android:id="@+id/textReps9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Reps:"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/holo9"
+        app:layout_constraintEnd_toEndOf="@+id/holo9"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="@+id/holo9" />
 
     <EditText
         android:id="@+id/editTextReps9"
@@ -502,10 +837,23 @@
         android:inputType="number"
         android:text="0"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo9"
+        app:layout_constraintEnd_toEndOf="@+id/holo9"
         app:layout_constraintHorizontal_bias="0.849"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo9" />
+
+    <TextView
+        android:id="@+id/textSets9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Sets:"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/holo9"
+        app:layout_constraintEnd_toEndOf="@+id/holo9"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="@+id/holo9" />
 
     <EditText
         android:id="@+id/editTextSets9"
@@ -515,16 +863,16 @@
         android:inputType="number"
         android:text="0"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo9"
+        app:layout_constraintEnd_toEndOf="@+id/holo9"
         app:layout_constraintHorizontal_bias="0.308"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo9" />
 
 
     <ImageView
         android:id="@+id/chest10"
-        android:layout_width="295dp"
-        android:layout_height="260dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_marginTop="130dp"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -532,6 +880,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/cable_chest_fly_round" />
+
+    <ImageView
+        android:id="@+id/holo10"
+        android:layout_width="265dp"
+        android:layout_height="113dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.460"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chest10"
+        app:layout_constraintVertical_bias="0.23"
+        app:srcCompat="@android:drawable/dialog_holo_light_frame" />
 
     <TextView
         android:id="@+id/textCableChestFly2"
@@ -542,10 +903,23 @@
         android:textSize="14sp"
         android:textStyle="bold"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo10"
+        app:layout_constraintEnd_toEndOf="@+id/holo10"
         app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo10" />
+
+    <TextView
+        android:id="@+id/textReps10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Reps:"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/holo10"
+        app:layout_constraintEnd_toEndOf="@+id/holo10"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="@+id/holo10" />
 
     <EditText
         android:id="@+id/editTextReps10"
@@ -555,10 +929,23 @@
         android:inputType="number"
         android:text="0"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo10"
+        app:layout_constraintEnd_toEndOf="@+id/holo10"
         app:layout_constraintHorizontal_bias="0.849"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo10" />
+
+    <TextView
+        android:id="@+id/textSets10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Sets:"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/holo10"
+        app:layout_constraintEnd_toEndOf="@+id/holo10"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="@+id/holo10" />
 
     <EditText
         android:id="@+id/editTextSets10"
@@ -568,16 +955,16 @@
         android:inputType="number"
         android:text="0"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo10"
+        app:layout_constraintEnd_toEndOf="@+id/holo10"
         app:layout_constraintHorizontal_bias="0.308"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo10" />
 
 
     <ImageView
         android:id="@+id/chest11"
-        android:layout_width="295dp"
-        android:layout_height="260dp"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
         android:layout_marginTop="130dp"
         android:visibility="gone"
         app:layout_constraintEnd_toEndOf="parent"
@@ -585,6 +972,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/chest_press_round" />
+
+    <ImageView
+        android:id="@+id/holo11"
+        android:layout_width="265dp"
+        android:layout_height="113dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.460"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chest11"
+        app:layout_constraintVertical_bias="0.23"
+        app:srcCompat="@android:drawable/dialog_holo_light_frame" />
 
     <TextView
         android:id="@+id/textChestPress2"
@@ -595,10 +995,23 @@
         android:textSize="14sp"
         android:textStyle="bold"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo11"
+        app:layout_constraintEnd_toEndOf="@+id/holo11"
         app:layout_constraintHorizontal_bias="0.482"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo11" />
+
+    <TextView
+        android:id="@+id/textReps11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Reps:"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/holo11"
+        app:layout_constraintEnd_toEndOf="@+id/holo11"
+        app:layout_constraintHorizontal_bias="0.65"
+        app:layout_constraintStart_toStartOf="@+id/holo11" />
 
     <EditText
         android:id="@+id/editTextReps11"
@@ -608,10 +1021,23 @@
         android:inputType="number"
         android:text="0"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo11"
+        app:layout_constraintEnd_toEndOf="@+id/holo11"
         app:layout_constraintHorizontal_bias="0.849"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo11" />
+
+    <TextView
+        android:id="@+id/textSets11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text="Sets:"
+        android:textSize="13sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/holo11"
+        app:layout_constraintEnd_toEndOf="@+id/holo11"
+        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintStart_toStartOf="@+id/holo11" />
 
     <EditText
         android:id="@+id/editTextSets11"
@@ -621,10 +1047,10 @@
         android:inputType="number"
         android:text="0"
         android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="@+id/holo"
+        app:layout_constraintBottom_toBottomOf="@+id/holo11"
+        app:layout_constraintEnd_toEndOf="@+id/holo11"
         app:layout_constraintHorizontal_bias="0.308"
-        app:layout_constraintStart_toStartOf="@+id/holo" />
+        app:layout_constraintStart_toStartOf="@+id/holo11" />
 
 
     <androidx.constraintlayout.widget.Guideline
@@ -639,26 +1065,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="327dp" />
+        app:layout_constraintGuide_begin="341dp" />
 
     <ImageView
         android:id="@+id/imageView23"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="334dp"
-        android:layout_marginBottom="240dp"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/next_right_button" />
 
     <ImageView
         android:id="@+id/imageView24"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginEnd="344dp"
-        android:layout_marginBottom="240dp"
-        app:layout_constraintBottom_toBottomOf="@+id/holo"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="240dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/next_left_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
