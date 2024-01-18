@@ -33,7 +33,7 @@
 
     <TextView
         android:id="@+id/workoutSet2"
-        android:layout_width="118dp"
+        android:layout_width="120dp"
         android:layout_height="21dp"
         android:layout_marginTop="2dp"
         android:text="@string/navigate_right_to_go"
@@ -41,6 +41,31 @@
         app:layout_constraintEnd_toEndOf="@+id/workoutSet1"
         app:layout_constraintStart_toStartOf="@+id/workoutSet1"
         app:layout_constraintTop_toBottomOf="@+id/workoutSet1" />
+
+    <ImageView
+        android:id="@+id/messageBoard2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="130dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.447"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/message_board" />
+
+    <TextView
+        android:id="@+id/noWorkoutSet1"
+        android:layout_width="91dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="110dp"
+        android:text="No Workout Set."
+        android:textSize="12sp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/messageBoard2"
+        app:layout_constraintStart_toStartOf="@+id/messageBoard2"
+        app:layout_constraintTop_toTopOf="@+id/messageBoard2" />
 
     <ImageView
         android:id="@+id/chest1"

@@ -85,6 +85,7 @@ public class Monday extends AppCompatActivity {
 
         TextView workoutIsSet1 = findViewById(R.id.workoutSet1);
         TextView workoutIsSet2 = findViewById(R.id.workoutSet2);
+        TextView noWorkoutSet1 = findViewById(R.id.noWorkoutSet1);
 
         ImageView workoutImage1 = findViewById(R.id.chest1);
         ImageView workoutImage2 = findViewById(R.id.chest2);
@@ -112,6 +113,8 @@ public class Monday extends AppCompatActivity {
         ImageView holoImageView9 = findViewById(R.id.holo9);
         ImageView holoImageView10 = findViewById(R.id.holo10);
         ImageView holoImageView11 = findViewById(R.id.holo11);
+
+        ImageView messageBoard2 = findViewById(R.id.messageBoard2);
 
         EditText editTextReps1 = findViewById(R.id.editTextReps);
         EditText editTextSets1 = findViewById(R.id.editTextSets);
@@ -173,6 +176,7 @@ public class Monday extends AppCompatActivity {
 
         workoutIsSet1.setTextColor(BLACK);
         workoutIsSet2.setTextColor(BLACK);
+        noWorkoutSet1.setTextColor(BLACK);
 
         editTextReps1.setTextColor(BLACK);
         editTextSets1.setTextColor(BLACK);
@@ -471,6 +475,22 @@ public class Monday extends AppCompatActivity {
                 editTextReps11.setText(valuesArray[0].trim());
                 editTextSets11.setText(valuesArray[1].trim());
             }
+        }
+
+        if(workout1Data == null &&
+                workout2Data == null &&
+                workout3Data == null &&
+                workout4Data == null &&
+                workout5Data == null &&
+                workout6Data == null &&
+                workout7Data == null &&
+                workout8Data == null &&
+                workout9Data == null &&
+                workout10Data == null &&
+                workout11Data == null){
+
+            noWorkoutSet1.setVisibility(View.VISIBLE);
+            messageBoard2.setVisibility(View.VISIBLE);
         }
         // Set click listeners for rightImage and leftImage
         rightImage.setOnClickListener(v -> showNextWorkout());
